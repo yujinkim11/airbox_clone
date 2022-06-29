@@ -9,6 +9,7 @@ import { Shop } from "./pages/shop/Shop";
 import { NotFound } from "./pages/NotFound";
 import { HelmetProvider } from "react-helmet-async";
 import { GlobalStyled } from "./styles/globalStyle";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </HelmetProvider>
   );
