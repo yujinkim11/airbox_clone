@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const SHeader = styled.div`
   width: 100%;
@@ -13,7 +14,6 @@ const SHeader = styled.div`
   top: 0;
   left: 0;
   z-index: 9;
-
   a {
     text-decoration: none;
     color: white;
@@ -35,6 +35,8 @@ const Menu = styled.li`
   font-size: 18px;
   font-weight: 700;
   list-style: none;
+  position: relative;
+  color: white;
   a {
     color: white;
   }
@@ -71,7 +73,7 @@ export const Header = () => {
           <Link to={"/shop"}>SHOP</Link>
         </Menu>
         <Menu>
-          <Link to={"/i"}>KOR</Link>
+          KOR <i class="fa-solid fa-angle-down"></i>
         </Menu>
       </MenuWrap>
     </SHeader>
