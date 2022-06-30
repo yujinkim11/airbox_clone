@@ -12,6 +12,7 @@ const Left = styled.div`
   color: #004dd8;
   font-size: 60px;
   font-weight: 900;
+  letter-spacing: -5px;
 `;
 
 const Img = styled.div`
@@ -27,6 +28,7 @@ const Right = styled.div`
   color: black;
   font-size: 45px;
   font-weight: 900;
+  letter-spacing: -5px;
 `;
 
 const Scroll = styled.p`

@@ -5,7 +5,7 @@ const SHeader = styled.div`
   width: 100%;
   max-width: 100%;
   height: 80px;
-  padding: 0 200px;
+  padding: 0 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@ const Logo = styled.div`
 `;
 
 const MenuWrap = styled.div`
-  width: 1000px;
+  width: 1120px;
   display: flex;
   justify-content: space-between;
 `;

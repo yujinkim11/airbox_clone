@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const FooterWrap = styled.div`
   height: 100vh;
-  padding: 200px 200px;
+  padding: 100px 200px 20px 200px;
   background-color: rgb(18, 18, 18);
   display: flex;
 
