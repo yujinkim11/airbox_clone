@@ -10,12 +10,22 @@ const BackGround = styled.div`
   align-items: center;
   background-image: url(https://airbox.co.kr/img/loading-bg.jpg);
   position: relative;
+  animation: backgroundBG 10s alternate infinite;
+  @keyframes backgroundBG {
+    0% {
+      background-size: 100%;
+    }
+    100% {
+      background-size: 120%;
+    }
+  }
 `;
 
 const Title = styled.h3`
   width: 1000px;
   height: 248px;
   color: white;
+
   @media screen and (max-width: 500px) {
     width: 400px;
     height: 100px;

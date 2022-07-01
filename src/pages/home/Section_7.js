@@ -30,6 +30,10 @@ const Sec7Img_1 = styled.div`
   position: absolute;
   left: 100px;
   top: 80px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 const Sec7Img_2 = styled.div`
@@ -40,6 +44,10 @@ const Sec7Img_2 = styled.div`
   position: absolute;
   right: 320px;
   top: 200px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 const Sec7Img_3 = styled.div`
@@ -50,6 +58,10 @@ const Sec7Img_3 = styled.div`
   position: absolute;
   right: 0px;
   top: 80px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 const Sec7Img_4 = styled.div`
@@ -60,6 +72,10 @@ const Sec7Img_4 = styled.div`
   position: absolute;
   left: 0px;
   bottom: 0px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 const Sec7Img_5 = styled.div`
@@ -70,6 +86,10 @@ const Sec7Img_5 = styled.div`
   position: absolute;
   left: 400px;
   bottom: 100px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 const Sec7Img_6 = styled.div`
@@ -80,6 +100,10 @@ const Sec7Img_6 = styled.div`
   position: absolute;
   right: 100px;
   bottom: 70px;
+  :hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
 `;
 
 export const Section_7 = () => {

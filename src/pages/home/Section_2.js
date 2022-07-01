@@ -10,6 +10,15 @@ const BackGround = styled.div`
   align-items: center;
   background-image: url(https://airbox.co.kr/img/loading-bg.jpg);
   position: relative;
+  animation: Section2BG 10s alternate infinite;
+  @keyframes Section2BG {
+    0% {
+      background-size: 120%;
+    }
+    100% {
+      background-size: 100%;
+    }
+  }
 `;
 
 const Title = styled.span`

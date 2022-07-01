@@ -36,13 +36,46 @@ const Menu = styled.li`
   font-weight: 700;
   list-style: none;
   position: relative;
+  display: flex;
   color: white;
   a {
     color: white;
   }
 `;
 
+const Btn = styled.div`
+  margin-left: 7px;
+  cursor: pointer;
+`;
+
+const HiddenMenu = styled.p`
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 60px;
+  right: 180px;
+  display: ${(props) => props.openmenu};
+`;
+
 export const Header = () => {
+  const [open, setOpen] = useState("none");
+
+  const handleOpen = () => {
+    if (open == "none") {
+      setOpen("block");
+    } else {
+      setOpen("none");
+    }
+  };
+
+  const handleScroll = () => {
+    // const sct = window.getBoundingClientRect().top;
+    // console.log(sct);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <SHeader>
       <Link to={"/"}>
@@ -73,9 +106,13 @@ export const Header = () => {
           <Link to={"/shop"}>SHOP</Link>
         </Menu>
         <Menu>
-          KOR <i class="fa-solid fa-angle-down"></i>
+          KOR
+          <Btn onClick={handleOpen}>
+            <i class="fa-solid fa-angle-down"></i>
+          </Btn>
         </Menu>
       </MenuWrap>
+      <HiddenMenu openmenu={open}>ENG</HiddenMenu>
     </SHeader>
   );
 };
